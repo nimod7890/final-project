@@ -1,0 +1,32 @@
+.card-item {
+  display: flex;
+  flex-direction: column;
+
+  padding: 25px;
+  gap: 8px;
+
+  border-radius: 10px;
+  border: 1px solid lightgray;
+
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card-item:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-subtitle {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 16px;
+  font-weight: 400;
+}

@@ -1,0 +1,114 @@
+/* 기본 스타일 */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 30px;
+  gap: 10px;
+  background: #f8f9fa;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.accordion {
+  display: none;
+}
+
+.menu-button {
+  font-size: 25px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  display: none;
+}
+
+header > a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+header > ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+header > ul li {
+  padding: 12px 24px;
+}
+
+header > ul li a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+header > ul li a:hover,
+header > ul li a:active {
+  color: #1a73e8;
+}
+
+/* title */
+
+.portfolio-title {
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none; /* 밑줄 없앰 */
+  transition: color 0.3s ease; /* 색상 변화에 애니메이션 효과 */
+}
+
+.portfolio-title:hover,
+.portfolio-title:focus {
+  color: #3498db; /* 밝은 파란색으로 호버 시 색상 변경 */
+}
+
+/* 활성화된 링크의 색상 표시 */
+body#project a[href="/views/project/project.html"],
+body#activity a[href="/views/activity/activity.html"],
+body#education a[href="/views/education/education.html"],
+body#career a[href="/views/career/career.html"],
+body#certificate a[href="/views/certificate/certificate.html"] {
+  font-weight: bold;
+  color: #ff5722;
+}
+
+/* 미디어 쿼리 */
+@media (max-width: 768px) {
+  .panel {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+  }
+
+  .header-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header > ul li a {
+    padding: 12px 20px;
+  }
+}

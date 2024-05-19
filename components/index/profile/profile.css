@@ -1,0 +1,73 @@
+.profile {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+
+  height: fit-content;
+}
+
+.profile-photo {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 5px solid rgb(255, 223, 195);
+}
+
+.name {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.title {
+  font-size: 18px;
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+/* social butttons */
+
+#socialButtons {
+  margin-bottom: 20px;
+}
+
+#socialButtons button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+#socialButtons button svg {
+  fill: #ccc;
+  width: 24px;
+  height: 24px;
+}
+
+/* contact info */
+#contactInfo {
+  text-align: left;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+}
+
+#contactInfo p {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #666;
+  margin: 8px 0;
+}
+
+#contactInfo p svg {
+  fill: #666;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
