@@ -13,7 +13,8 @@ header {
 
 .header-content {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
 }
@@ -31,12 +32,7 @@ header {
   display: none;
 }
 
-header > a {
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
-  text-decoration: none;
-}
+/* nav bar */
 
 header > ul {
   list-style: none;
@@ -63,12 +59,12 @@ header > ul li a:active {
   color: #1a73e8;
 }
 
-/* title */
+/* (animated) title */
 
 .portfolio-title {
-  font-size: 28px;
+  font-size: 36px;
   font-weight: bold;
-  text-decoration: none; /* 밑줄 없앰 */
+  text-decoration: none;
   transition: color 0.3s ease; /* 색상 변화에 애니메이션 효과 */
 }
 
@@ -93,6 +89,9 @@ body#certificate a[href="/views/certificate/certificate.html"] {
     display: none;
   }
 
+  .header-content {
+    flex-direction: row;
+  }
   .menu-button {
     display: block;
   }
@@ -101,11 +100,6 @@ body#certificate a[href="/views/certificate/certificate.html"] {
 @media (max-width: 480px) {
   header {
     flex-direction: column;
-  }
-
-  .header-content {
-    flex-direction: row;
-    justify-content: space-between;
   }
 
   header > ul li a {
