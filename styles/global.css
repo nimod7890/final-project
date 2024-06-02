@@ -88,6 +88,6 @@ button:disabled {
 body {
   display: flex;
   flex-direction: column;
-
+  padding: 0 20px;
   background-color: antiquewhite;
 }
