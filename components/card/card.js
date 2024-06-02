@@ -1,6 +1,6 @@
 /**
  *
- * @param {Array<{id:string;subtitle:string;title:string;description:string}>} cards
+ * @param {Array<{}>} cards
  * @param {string} elementId
  */
 
@@ -17,8 +17,11 @@ function loadCardList(cards, elementId) {
     cardItem.classList.add("card-item");
 
     cardItem.addEventListener("click", () => {
-      console.log(`./details/details.html?id=${card.id}`);
-      window.location.href = `./details/details.html?id=${card.id}`;
+      if (card.link) {
+        window.open(card.link, "_blank");
+      } else {
+        window.location.href = `./details/details.html?id=${card.id}`;
+      }
     });
 
     const subtitle = document.createElement("div");

@@ -4,6 +4,7 @@ const certificates = [
     subtitle: "취득일: 2022.9.23 (유효 기간 없음)",
     title: "ADsP : Advanced Data Analytics Semi-Professional",
     description: "제 34회 데이터분석 준전문가",
+    link: "https://www.dataq.or.kr/www/sub/a_06.do",
   },
 ];
 
