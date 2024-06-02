@@ -68,10 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
           setTimeout(step, stepDuration);
         } else {
           titleElement.textContent = nextWord;
-          // 다음 단어로 넘어가기 전에 1초 대기
-          setTimeout(() => {
-            setTimeout(changeWord, interval - 1000); // 총 5초 간격 유지
-          }, 1000);
+          setTimeout(changeWord, interval);
         }
       }
 
@@ -80,12 +77,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function changeWord() {
       const currentWord = words[wordIndex];
-      wordIndex = (wordIndex + 1) % words.length; // wordIndex를 순환하도록 설정
+      wordIndex = (wordIndex + 1) % words.length;
       const nextWord = words[wordIndex];
       animateWordChange(currentWord, nextWord);
     }
 
     titleElement.textContent = words[0];
-    setTimeout(changeWord, interval); // 첫 단어 표시 후 5초 후에 첫 애니메이션 시작
+    setTimeout(changeWord, interval);
   }
 });
