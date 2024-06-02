@@ -1,10 +1,10 @@
 #career-area {
   position: relative;
-  width: 100vw;
+  width: calc(100vw - 400px);
   height: 100vh;
-  left: -500px;
-  bottom: 200px;
-  overflow: hidden;
+  left: -250px;
+  top: -200px;
+  overflow: visible;
 }
 
 .career-card {
