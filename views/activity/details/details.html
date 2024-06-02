@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link href="./details.css" rel="stylesheet" type="text/css" />
     <meta charset="UTF-8" />
   </head>
   <body>
-    <h1 id="product-title">Product Title</h1>
-    <p id="product-description">Description of the product.</p>
+    <div id="activity-details">
+      <div class="card-detail">
+        <h1 id="product-title" class="product-title"></h1>
+        <p id="product-subtitle" class="product-subtitle"></p>
+        <div class="details-container">
+          <div class="details-section">
+            <h2>Main Achievements</h2>
+            <ul id="product-achievements" class="details-list"></ul>
+          </div>
+          <div class="details-section">
+            <h2>Technologies Used</h2>
+            <p id="product-technologies"></p>
+          </div>
+          <div class="details-section">
+            <h2>Team Members</h2>
+            <p id="product-team"></p>
+          </div>
+          <div class="details-section">
+            <h2>Links</h2>
+            <ul id="product-links" class="details-list"></ul>
+          </div>
+          <div class="details-section">
+            <h2>Lessons Learned</h2>
+            <p id="product-lessons"></p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
   <script src="/components/header/header.js"></script>
   <script src="/views/activity/activity.js"></script>
