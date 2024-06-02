@@ -3,8 +3,8 @@
   width: 100vw;
   height: 100vh;
   left: -500px;
-  top: 200px;
-  overflow: visible;
+  bottom: 200px;
+  overflow: hidden;
 }
 
 .career-card {
@@ -12,7 +12,7 @@
   cursor: pointer;
   width: 250px;
   background: rgba(255, 255, 255, 0.8);
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 20px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
