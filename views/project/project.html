@@ -6,20 +6,26 @@
   </head>
 
   <body id="project">
-    <div
-      class="project-item"
-      data-project-id="1"
-      data-title="Instagram Clone Coding"
-      data-description="유튜브 컴공선배 주관 너디너리 챌린지의 일환으로 진행했습니다.">
-      <img loading="lazy" src="/assets/hi.png" alt="인스타그램 프로젝트 썸네일" />
-      <div class="info">
-        <p>Instagram Clone Coding</p>
+    <div id="projects-container"></div>
+
+    <!-- Modal -->
+    <div id="project-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-header">
+          <h2 id="modal-project-name"></h2>
+        </div>
+        <div class="modal-body">
+          <img id="modal-project-image" src="" alt="Project Image" />
+          <div class="modal-description">
+            <p id="modal-project-description"></p>
+            <p id="modal-project-date"></p>
+            <p id="modal-project-technologies"></p>
+          </div>
+        </div>
       </div>
     </div>
-
-    <!-- 모달 -->
-    <div id="projectModal"></div>
   </body>
   <script src="/components/header/header.js"></script>
-  <script src="./modal.js"></script>
+  <script src="./project.js"></script>
 </html>
