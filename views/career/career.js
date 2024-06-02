@@ -73,8 +73,8 @@ function loadCareerCardList(cards, elementId) {
     cardItem.style.animation = `float${index} 10s linear infinite`;
 
     // Randomize initial position within bounds
-    const initialTop = Math.random() * 80;
-    const initialLeft = Math.random() * 80;
+    const initialTop = Math.random() * 100;
+    const initialLeft = Math.random() * 100;
     cardItem.style.top = initialTop + "vh";
     cardItem.style.left = initialLeft + "vw";
 
@@ -105,7 +105,6 @@ function loadCareerCardList(cards, elementId) {
 
 function createKeyframes(index, initialTop, initialLeft) {
   const style = document.createElement("style");
-  style.type = "text/css";
 
   const keyframes = `
     @keyframes float${index} {
@@ -124,6 +123,5 @@ function createKeyframes(index, initialTop, initialLeft) {
 function randomOffset(initial) {
   const offset = Math.random() * 200 - 100; // Random value between -100 and 100
   const newValue = initial + offset;
-  // Ensure the value stays within bounds [0, 100]
   return Math.max(0, Math.min(100, newValue));
 }
