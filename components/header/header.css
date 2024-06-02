@@ -1,6 +1,6 @@
 /* 기본 스타일 */
 header {
-  margin: 20px 0;
+  margin: 40px 0;
   display: flex;
   flex-direction: column;
   align-items: center;

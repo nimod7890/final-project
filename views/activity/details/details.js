@@ -32,6 +32,5 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("product-lessons").innerText = card.lessons;
   } else {
     document.getElementById("product-title").textContent = "Product not found";
-    document.getElementById("product-description").textContent = "";
   }
 });

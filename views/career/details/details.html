@@ -1,11 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link href="./details.css" rel="stylesheet" type="text/css" />
     <meta charset="UTF-8" />
   </head>
   <body>
-    <h1 id="product-title">Product Title</h1>
-    <p id="product-description">Description of the product.</p>
+    <div id="career-details" class="details-container">
+      <section class="content">
+        <div class="career-details-description">
+          <h1 id="career-details-title"></h1>
+          <p id="career-details-subtitle"></p>
+          <p id="career-details-description"></p>
+        </div>
+        <div class="details">
+          <div class="career-details-card">
+            <h3>Responsibilities</h3>
+            <ul id="product-responsibilities"></ul>
+          </div>
+
+          <div class="career-details-card">
+            <h3>Achievements</h3>
+            <ul id="product-achievements"></ul>
+          </div>
+          <div class="career-details-card">
+            <h3>Learnings</h3>
+            <p id="product-learnings"></p>
+          </div>
+          <div class="career-details-card">
+            <h3>Technologies</h3>
+            <p id="product-technologies"></p>
+          </div>
+          <div class="career-details-card">
+            <h3>Team Size</h3>
+            <p id="product-team"></p>
+          </div>
+          <div class="career-details-card">
+            <h3>Links</h3>
+            <ul id="product-links"></ul>
+          </div>
+        </div>
+      </section>
+    </div>
   </body>
   <script src="/components/header/header.js"></script>
   <script src="/views/career/career.js"></script>
