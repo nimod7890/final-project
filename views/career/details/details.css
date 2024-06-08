@@ -1,9 +1,9 @@
 #career-details {
   align-self: center;
-
-  width: 90%;
+  width: 100%;
   max-width: 1500px;
-  background-color: #ffffff;
+  background-color: #ffffff33;
+  backdrop-filter: blur(10px);
   border-radius: 10px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   padding: 40px;
@@ -23,12 +23,12 @@
 }
 
 #career-details-subtitle {
-  color: #757575;
+  color: #dedbdb;
   margin-bottom: 20px;
 }
 
 #career-details-description {
-  color: #78909c;
+  color: #a5d0e5;
   margin-bottom: 20px;
   font-style: italic;
 }
@@ -49,7 +49,7 @@
 
 .details {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 }
 
@@ -61,14 +61,14 @@
 
 .career-details-description,
 .details {
-  background-color: #e3f2fd;
+  background-color: #e3f2fd65;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .career-details-card {
-  background-color: #ffffff;
+  background-color: #e3f2fd65;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
@@ -90,12 +90,22 @@
 }
 
 .career-details-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
 
 @keyframes fadeIn {
   to {
     opacity: 1;
+  }
+}
+
+/* 미디어 쿼리 */
+@media (max-width: 768px) {
+  #career-details,
+  .career-details-description,
+  .details,
+  .career-details-card {
+    padding: 15px;
   }
 }

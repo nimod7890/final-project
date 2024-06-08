@@ -8,7 +8,8 @@ header {
   padding: 16px 30px;
   gap: 10px;
 
-  background-color: #f8f9fa;
+  background-color: rgb(237, 237, 237, 0.1);
+  backdrop-filter: blur(10px);
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -51,7 +52,7 @@ header > ul li {
 
 header > ul li a {
   text-decoration: none;
-  color: #555;
+  color: #c4c4c4;
   font-weight: 500;
   font-size: 18px;
 }
@@ -67,12 +68,13 @@ header > ul li a:active {
   font-size: 36px;
   font-weight: bold;
   text-decoration: none;
+  color: #dba934;
   transition: color 0.3s ease; /* 색상 변화에 애니메이션 효과 */
 }
 
 .portfolio-title:hover,
 .portfolio-title:focus {
-  color: #3498db; /* 밝은 파란색으로 호버 시 색상 변경 */
+  color: #1a73e8;
 }
 
 /* 활성화된 링크의 색상 표시 */
@@ -82,7 +84,7 @@ body#education a[href="/views/education/education.html"],
 body#career a[href="/views/career/career.html"],
 body#certificate a[href="/views/certificate/certificate.html"] {
   font-weight: bold;
-  color: #ff5722;
+  color: #ff5622a9;
 }
 
 /* 미디어 쿼리 */

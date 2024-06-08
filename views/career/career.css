@@ -10,14 +10,16 @@
 .career-card {
   position: absolute;
   cursor: pointer;
-  width: 250px;
-  background: rgba(255, 255, 255, 0.8);
+  width: 500px;
+  height: 200px;
+
+  background: rgba(255, 255, 255, 0.3);
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   animation: float 10s linear infinite;
-  backdrop-filter: blur(10px); /* 유리 효과 */
+  backdrop-filter: blur(10px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,18 +34,37 @@
 }
 
 .career-card-subtitle {
-  font-size: 0.9em;
-  color: #585858c1;
+  font-size: 1em;
+  color: #dbdbdbac;
 }
 
 .career-card-title {
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-weight: bold;
-  color: #0099ff98;
+  color: #3fb2ff98;
   margin: 5px 0;
 }
 
 .career-card-description {
-  font-size: 0.9em;
-  color: #00000073;
+  font-size: 1em;
+  color: #000000a7;
+}
+
+@media (max-width: 768px) {
+  .career-card {
+    width: 300px;
+    height: 150px;
+  }
+
+  .career-card-subtitle {
+    font-size: 0.9em;
+  }
+
+  .career-card-title {
+    font-size: 1em;
+  }
+
+  .career-card-description {
+    font-size: 0.8em;
+  }
 }

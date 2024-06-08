@@ -3,22 +3,22 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 1200px;
+  height: 100%;
   position: relative;
 }
 
 .carousel {
   position: relative;
-  width: 300px;
-  height: 400px;
-  perspective: 1000px;
+  width: 800px;
+  height: 800px;
 }
 
 .certificate-card {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #ffffff;
+  background: #ffffff4d;
+  backdrop-filter: blur(10px);
   border: 2px solid #e0e0e0;
   border-radius: 10px;
   padding: 20px;
@@ -50,21 +50,22 @@
 }
 
 .certificate-card h3 {
-  font-size: 1.5em;
-  color: #1976d2;
+  font-size: 5em;
+  color: #4fa7ff;
   margin-bottom: 15px;
   font-family: "Times New Roman", Times, serif;
 }
 
 .certificate-card p {
-  font-size: 1em;
-  color: #555;
+  font-size: 2em;
+  color: hsl(0, 0%, 83%);
   margin-bottom: 10px;
   font-family: "Times New Roman", Times, serif;
 }
 
 .certificate-card a {
-  color: #1976d2;
+  font-size: 1rem;
+  color: #4fa7ff;
   text-decoration: none;
   font-weight: bold;
 }
@@ -74,11 +75,11 @@
 }
 
 .nav-button {
-  background-color: #1976d2;
+  background-color: #47a3ff82;
   border: none;
   color: white;
-  padding: 10px;
-  margin: 10px;
+  padding: 20px;
+  margin: 20px;
   border-radius: 50%;
   cursor: pointer;
   font-size: 1.5em;
@@ -90,7 +91,7 @@
 }
 
 .nav-button:disabled {
-  background-color: #b0bec5;
+  background-color: #707071cb;
   cursor: not-allowed;
   transform: none;
 }
@@ -102,4 +103,26 @@
 
 .nav-button:focus {
   outline: none;
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    position: relative;
+    width: 300px;
+    height: 400px;
+  }
+  .certificate-card h3 {
+    font-size: 1.5em;
+  }
+
+  .certificate-card p {
+    font-size: 1em;
+  }
+
+  .certificate-card a {
+    font-size: 0.7rem;
+  }
+  .nav-button {
+    padding: 10px;
+  }
 }

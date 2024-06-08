@@ -21,13 +21,14 @@
 }
 
 .name {
+  color: #faf9f9;
   font-size: 24px;
   margin-bottom: 5px;
 }
 
 .title {
   font-size: 18px;
-  color: #aaa;
+  color: #878686;
   margin-bottom: 20px;
 }
 
@@ -45,7 +46,7 @@
 }
 
 #socialButtons button svg {
-  fill: #ccc;
+  fill: #ffffff;
   width: 24px;
   height: 24px;
 }
@@ -61,12 +62,12 @@
   display: flex;
   align-items: center;
   font-size: 14px;
-  color: #666;
+  color: #e4dede;
   margin: 8px 0;
 }
 
 #contactInfo p svg {
-  fill: #666;
+  color: #c9c7c7;
   margin-right: 10px;
   width: 20px;
   height: 20px;

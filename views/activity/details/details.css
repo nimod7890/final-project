@@ -3,6 +3,7 @@
 
   width: 90%;
   max-width: 800px;
+  backdrop-filter: blur(1px);
   background: rgba(255, 255, 255, 0.57);
   border-radius: 10px;
   padding: 20px 40px;
@@ -14,11 +15,12 @@
   overflow: hidden;
   transform-style: preserve-3d;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(3px);
   box-shadow: 0 20px 30px rgba(255, 159, 159, 0.1);
 }
 
 #activity-details:hover {
+  backdrop-filter: blur(8px);
   transform: perspective(1000px) rotateY(5deg) rotateX(-5deg);
   box-shadow: 0 30px 40px rgba(255, 159, 159, 0.2);
 }
@@ -49,10 +51,9 @@
 
 .activity-card-section {
   padding: 15px;
-  background-color: rgba(240, 128, 128, 0.171);
+  background-color: rgba(240, 128, 128, 0.5);
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
   h2 {
     font-size: 1.2em;
     color: #b92929;
