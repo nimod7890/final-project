@@ -87,5 +87,10 @@ body {
   display: flex;
   flex-direction: column;
   padding: 0 20px;
-  background-color: antiquewhite;
+
+  background-image: url("/assets/bg-image.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
