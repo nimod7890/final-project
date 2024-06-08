@@ -42,5 +42,5 @@ script.src = "/components/card/card.js";
 document.body.appendChild(script);
 
 script.onload = function () {
-  loadCardList(activities, "activity-area");
+  loadCards(activities, "activity-area");
 };

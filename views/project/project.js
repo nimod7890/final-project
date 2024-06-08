@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   projects.forEach((project) => {
     const projectCard = document.createElement("div");
-    projectCard.className = "project-card";
+    projectCard.className = `project-card vibrate-${(project.id % 3) + 1}`;
     projectCard.dataset.projectId = project.id;
 
     projectCard.innerHTML = `

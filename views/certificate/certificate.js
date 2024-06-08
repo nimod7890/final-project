@@ -61,7 +61,9 @@ function loadCertificateList(cards, elementId) {
   cards.forEach((card, index) => {
     const cardItem = document.createElement("div");
     cardItem.classList.add("certificate-card");
-    if (index === 0) cardItem.classList.add("active");
+    if (index === 0) {
+      cardItem.classList.add("active");
+    }
 
     const title = document.createElement("h3");
     title.textContent = card.title;

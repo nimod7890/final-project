@@ -15,19 +15,15 @@ const education = [
 
 function loadCardList(data, containerId) {
   const container = document.getElementById(containerId);
-  container.innerHTML = ""; // Clear previous content
 
-  // 복제된 첫 번째 아이템을 먼저 추가
   const firstItemClone = createCarouselItem(data[data.length - 1]);
   container.appendChild(firstItemClone);
 
-  // 원래 데이터 로드
   data.forEach((edu) => {
     const item = createCarouselItem(edu);
     container.appendChild(item);
   });
 
-  // 마지막 아이템 복제 추가
   const lastItemClone = createCarouselItem(data[0]);
   container.appendChild(lastItemClone);
 }
@@ -37,7 +33,7 @@ function createCarouselItem(edu) {
   item.className = "carousel-item";
   item.innerHTML = `<h2 class="title">${edu.title}</h2><p class="subtitle">${edu.subtitle}</p>`;
   item.onclick = () => {
-    window.location.href = `detail.html?id=${edu.id}`;
+    window.location.href = `./details/details.html?id=${edu.id}`;
   };
   return item;
 }

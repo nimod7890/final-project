@@ -1,8 +1,6 @@
 #education-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
   border-radius: 10px;
 }
 
@@ -13,7 +11,8 @@
   margin: 0 auto;
   position: relative;
   width: 530px;
-  height: 600px;
+  min-height: 600px;
+
   overflow: hidden;
 }
 

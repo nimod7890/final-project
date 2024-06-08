@@ -4,7 +4,9 @@
  * @param {string} elementId
  */
 
-function loadCardList(cards, elementId) {
+const bounceAnimation = ["bounce-in-top", "bounce-in-left", "bounce-bottom", "bounce-right "];
+
+function loadCards(cards, elementId) {
   var container = document.getElementById(elementId);
 
   if (!container) {
@@ -14,7 +16,7 @@ function loadCardList(cards, elementId) {
 
   cards.forEach((card) => {
     const cardItem = document.createElement("div");
-    cardItem.classList.add("card-item");
+    cardItem.className = `card-item ${bounceAnimation[card.id % 4]}`;
 
     cardItem.addEventListener("click", () => {
       if (card.link) {
