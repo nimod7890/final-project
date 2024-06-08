@@ -50,21 +50,21 @@
 }
 
 .certificate-card h3 {
-  font-size: 5em;
+  font-size: 4em;
   color: #4fa7ff;
   margin-bottom: 15px;
   font-family: "Times New Roman", Times, serif;
 }
 
 .certificate-card p {
-  font-size: 2em;
+  font-size: 1.5em;
   color: hsl(0, 0%, 83%);
   margin-bottom: 10px;
   font-family: "Times New Roman", Times, serif;
 }
 
 .certificate-card a {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #4fa7ff;
   text-decoration: none;
   font-weight: bold;
