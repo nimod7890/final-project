@@ -1,0 +1,114 @@
+#education-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.carousel-container {
+  display: flex;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  margin: 0 auto;
+  position: relative;
+  width: 530px;
+  height: 600px;
+  overflow: hidden;
+}
+
+.carousel-item {
+  flex: 0 0 500px;
+  flex-direction: column;
+  scroll-snap-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  border-radius: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+  margin: 20px;
+  width: 500px;
+  height: 500px;
+  position: relative;
+  transform: rotateY(0deg) translateZ(0);
+}
+
+.carousel-item::after {
+  content: "";
+  position: absolute;
+  bottom: -60px; /* 그림자의 위치 */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%; /* 타원형 */
+  filter: blur(10px); /* 블러 효과 */
+}
+
+.carousel-item:hover {
+  transform: scale(1.05) rotateY(0deg) translateZ(0);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.title,
+.subtitle {
+  background: linear-gradient(to right, #cb4011, #fcea25);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 24px;
+}
+
+.carousel-container::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@media (max-width: 768px) {
+  .carousel-container {
+    width: 350px;
+    height: 400px;
+  }
+
+  .carousel-item {
+    flex: 0 0 300px;
+    width: 300px;
+    height: 300px;
+  }
+
+  .carousel-item::after {
+    width: 200px;
+    height: 30px;
+  }
+
+  .title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+}
