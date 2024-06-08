@@ -11,7 +11,7 @@ const certificates = [
     subtitle: "취득일: 2021.6.15 (유효 기간 없음)",
     title: "SQLD : SQL Developer",
     description: "제 27회 SQL 개발자",
-    link: "https://www.sql.or.kr",
+    link: "https://www.dataq.or.kr/www/sub/a_04.do",
   },
 ];
 
