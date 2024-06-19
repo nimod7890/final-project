@@ -6,25 +6,27 @@
   </head>
 
   <body id="project">
-    <div id="projects-container"></div>
+    <main id="projects-container" aria-label="Projects">
+      <!-- Projects will be dynamically inserted here -->
+    </main>
 
     <!-- Modal -->
-    <div id="project-modal" class="modal">
+    <aside id="project-modal" class="modal" aria-hidden="true">
       <div class="modal-content">
-        <span class="close">&times;</span>
-        <div class="modal-header">
+        <button class="close" aria-label="Close Modal">&times;</button>
+        <header class="modal-header">
           <h2 id="modal-project-name"></h2>
-        </div>
-        <div class="modal-body">
+        </header>
+        <section class="modal-body">
           <img id="modal-project-image" src="" alt="Project Image" />
           <div class="modal-description">
             <p id="modal-project-description"></p>
             <p id="modal-project-date"></p>
             <p id="modal-project-technologies"></p>
           </div>
-        </div>
+        </section>
       </div>
-    </div>
+    </aside>
   </body>
   <script src="/components/header/header.js"></script>
   <script src="./project.js"></script>

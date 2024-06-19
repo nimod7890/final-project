@@ -1,13 +1,26 @@
+:root {
+  --background-light: rgba(255, 255, 255, 0.2);
+  --background-dark: rgba(0, 0, 0, 0.2);
+  --text-color-light: rgba(255, 255, 255, 0.4);
+  --blur-effect: 15px;
+  --border-radius: 20px;
+  --box-shadow-light: 0 4px 8px rgba(0, 0, 0, 0.25);
+  --box-shadow-dark: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 #index-area {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
+  padding: 20px;
 }
 
 #index-profile {
-  background-color: #ffffff1b;
-  backdrop-filter: blur(10px);
+  background-color: var(--background-light);
+  backdrop-filter: blur(var(--blur-effect));
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow-light);
   max-width: 350px;
   min-width: 250px;
 }
@@ -16,61 +29,18 @@
   flex: 1;
   min-width: 200px;
   max-width: 1000px;
-
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 30px;
   padding: 20px;
   margin: auto 0;
-
+  background-color: var(--background-dark);
+  border-radius: var(--border-radius);
   h2 {
     color: rgba(245, 245, 245, 0.72);
-    background-color: rgba(0, 0, 0, 0.211);
     border-radius: 20px;
     text-align: center;
     margin-bottom: 10px;
-  }
-}
-
-/** favorite songs */
-
-.favorite-songs {
-  ul {
-    list-style-type: none;
-    padding: 0;
-    color: rgba(102, 102, 102, 0.93);
-  }
-  li {
-    background: #ffffff2f;
-    backdrop-filter: blur(10px);
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    > :hover {
-      background: #e8f4fd33;
-      border-radius: 10px;
-    }
-  }
-}
-
-.song-info {
-  text-align: center;
-
-  p {
-    color: whitesmoke;
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-
-  iframe {
-    width: 100%;
-    max-width: 560px;
-    height: 315px;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -78,13 +48,12 @@
 
 .tech-stack {
   margin-bottom: 30px;
-  background: #0000007b;
+  background-color: var(--background-dark);
   padding-bottom: 30px;
   border-radius: 10px;
   img {
     width: 100px;
   }
-
   .tech-icons {
     display: flex;
     flex-wrap: wrap;
@@ -100,12 +69,10 @@
 }
 
 @media (max-width: 600px) {
-  .tech-stack {
-    .tech-icons li {
-      flex-basis: 40%;
-    }
+  .tech-stack .tech-icons li {
+    flex-basis: 50%;
     img {
-      width: 50px;
+      width: 60px;
     }
   }
 }

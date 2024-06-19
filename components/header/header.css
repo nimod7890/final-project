@@ -8,9 +8,9 @@ header {
   padding: 16px 30px;
   gap: 10px;
 
-  background-color: rgb(237, 237, 237, 0.1);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.2); /* 배경 투명도 조정 */
+  backdrop-filter: blur(10px); /* 블러 효과 증가 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 그림자 효과 변경 */
 }
 
 .header-content {
@@ -28,6 +28,8 @@ header {
 .menu-button {
   font-size: 25px;
   padding: 10px 20px;
+  background-color: #2196f3;
+  color: #ffffff; /* 글자색 변경 */
   border: none;
   cursor: pointer;
   border-radius: 5px;
@@ -58,22 +60,22 @@ header > ul li a {
 
 header > ul li a:hover,
 header > ul li a:active {
-  color: #1a73e8;
+  color: #64b5f6;
 }
 
 /* (animated) title */
 
 .portfolio-title {
-  font-size: 36px;
+  font-size: 40px; /* 폰트 크기 조정 */
   font-weight: bold;
   text-decoration: none;
-  color: #dba934;
+  color: #f0f0f0; /* 텍스트 색상 변경 */
   transition: color 0.3s ease; /* 색상 변화에 애니메이션 효과 */
 }
 
 .portfolio-title:hover,
 .portfolio-title:focus {
-  color: #1a73e8;
+  color: #64b5f6; /* 호버 시 색상 변경 */
 }
 
 /* 활성화된 링크의 색상 표시 */
@@ -83,7 +85,7 @@ body#education a[href="/views/education/education.html"],
 body#career a[href="/views/career/career.html"],
 body#certificate a[href="/views/certificate/certificate.html"] {
   font-weight: bold;
-  color: #ff5622a9;
+  color: #1565c0;
 }
 
 /* 미디어 쿼리 */
@@ -94,9 +96,15 @@ body#certificate a[href="/views/certificate/certificate.html"] {
 
   .header-content {
     flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
   }
   .menu-button {
     display: block;
+    background-color: #4a90e2; /* 배경색 변경 */
+    color: #ffffff; /* 글자색 변경 */
+    font-size: 20px; /* 글자 크기 조정 */
+    padding: 5px 10px; /* 패딩 조정 */
   }
 }
 
@@ -106,6 +114,11 @@ body#certificate a[href="/views/certificate/certificate.html"] {
   }
 
   header > ul li a {
-    padding: 12px 20px;
+    font-size: 16px; /* 모바일에서의 글자 크기 조정 */
+    padding: 12px;
+  }
+
+  .portfolio-title {
+    font-size: 20px; /* 모바일에서의 타이틀 글자 크기 조정 */
   }
 }

@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const cardId = Number(params.get("id"));
 
   const card = activities.find(({ id }) => id === cardId);
-  console.log(card);
+
   if (card) {
     document.getElementById("product-title").innerText = card.title;
     document.getElementById("product-subtitle").innerText = card.subtitle;

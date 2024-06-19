@@ -17,9 +17,9 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #ffffff4d;
+  background: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(10px);
-  border: 2px solid #e0e0e0;
+  border: 2px solid rgba(255, 255, 255, 0.2); /* 테두리 색상 조정 */
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
@@ -51,9 +51,10 @@
 
 .certificate-card h3 {
   font-size: 4em;
-  color: #4fa7ff;
+  color: #2196f3;
   margin-bottom: 15px;
   font-family: "Times New Roman", Times, serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .certificate-card p {
@@ -65,17 +66,18 @@
 
 .certificate-card a {
   font-size: 1.2rem;
-  color: #4fa7ff;
+  color: #2196f3;
   text-decoration: none;
   font-weight: bold;
 }
 
 .certificate-card a:hover {
   text-decoration: underline;
+  color: #1565c0;
 }
 
 .nav-button {
-  background-color: #47a3ff82;
+  background-color: rgba(33, 150, 243, 0.5);
   border: none;
   color: white;
   padding: 20px;
@@ -83,8 +85,8 @@
   border-radius: 50%;
   cursor: pointer;
   font-size: 1.5em;
-  transition: background-color 0.3s, transform 0.3s;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* 그림자 효과 강화 */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,6 +101,7 @@
 .nav-button:hover:not(:disabled) {
   background-color: #1565c0;
   transform: scale(1.1);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
 }
 
 .nav-button:focus {

@@ -3,10 +3,12 @@
 
   width: 90%;
   max-width: 800px;
-  backdrop-filter: blur(1px);
-  background: rgba(255, 255, 255, 0.57);
-  border-radius: 10px;
+  backdrop-filter: blur(10px); /* 블러 효과 강화 */
+  background: rgba(255, 255, 255, 0.5); /* 배경 투명도 증가 */
+  border-radius: 15px; /* 둥근 모서리 강조 */
   padding: 20px 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 그림자 효과 강화 */
+  animation: fadeIn 1s ease-in-out; /* Animista fadeIn 애니메이션 적용 */
 }
 
 #activity-details {
@@ -15,13 +17,14 @@
   overflow: hidden;
   transform-style: preserve-3d;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(5px); /* 블러 효과 조정 */
+  animation: jello-horizontal 0.9s both;
 }
 
 #activity-details:hover {
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(15px); /* 호버 시 블러 효과 강화 */
   transform: perspective(1000px) rotateY(5deg) rotateX(-5deg);
-  box-shadow: 0 30px 20px rgba(255, 159, 159, 0.2);
+  box-shadow: 0 30px 20px rgba(0, 0, 0, 0.3); /* 호버 시 그림자 강화 */
 }
 
 .activity-card {
@@ -31,9 +34,8 @@
 .activity-card-title {
   font-size: 2.2em;
   margin-bottom: 5px;
-  color: #bb1600b4;
+  color: #2196f3; /* 포인트 컬러로 변경 */
   font-weight: 700;
-  animation: slideDown 0.5s ease-in-out;
 }
 
 .activity-card-subtitle {
@@ -50,12 +52,12 @@
 
 .activity-card-section {
   padding: 15px;
-  background-color: rgba(240, 128, 128, 0.5);
+  background-color: rgba(240, 248, 255, 0.5); /* 밝은 투명도 조정 */
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   h2 {
     font-size: 1.2em;
-    color: #b92929;
+    color: #2196f3; /* 포인트 컬러로 변경 */
     margin-bottom: 10px;
     font-weight: 600;
   }
@@ -66,27 +68,7 @@
   padding-left: 20px;
   li {
     margin-bottom: 5px;
-    color: #5e3434; /* 어두운 회색 */
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes slideDown {
-  from {
-    transform: translateY(-20px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
+    color: #5e3434;
   }
 }
 

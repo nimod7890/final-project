@@ -1,14 +1,12 @@
 .profile {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9; /* 배경색 변경 */
+  border-radius: 20px; /* 테두리 반경 증가 */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* 그림자 효과 변경 */
   overflow: hidden;
-
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
-
+  padding: 30px; /* 패딩 증가 */
   height: fit-content;
 }
 
@@ -17,19 +15,21 @@
   height: auto;
   border-radius: 10px;
   margin-bottom: 20px;
-  border: 5px solid rgb(255, 223, 195);
+  border: 5px solid #e0e0e0;
 }
 
 .name {
-  color: #faf9f9;
-  font-size: 24px;
-  margin-bottom: 5px;
+  color: #ffffff; /* 텍스트 색상 변경 */
+  font-size: 26px; /* 폰트 크기 조정 */
+  margin-bottom: 10px; /* 여백 조정 */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 텍스트 그림자 추가 */
 }
 
 .title {
-  font-size: 18px;
-  color: #878686;
-  margin-bottom: 20px;
+  font-size: 20px; /* 폰트 크기 조정 */
+  color: #cdcdcd; /* 밝은 텍스트 색상으로 변경 */
+  margin-bottom: 20px; /* 여백 유지 */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 텍스트 그림자 추가 */
 }
 
 /* social butttons */
@@ -46,7 +46,7 @@
 }
 
 #socialButtons button svg {
-  fill: #ffffff;
+  fill: #4a90e2; /* 아이콘 색상 변경 */
   width: 24px;
   height: 24px;
 }
@@ -61,13 +61,13 @@
 #contactInfo p {
   display: flex;
   align-items: center;
-  font-size: 14px;
-  color: #e4dede;
+  font-size: 16px; /* 텍스트 크기 조정 */
+  color: #cdcdcd; /* 텍스트 색상 변경 */
   margin: 8px 0;
 }
 
 #contactInfo p svg {
-  color: #c9c7c7;
+  color: #888; /* 아이콘 색상 변경 */
   margin-right: 10px;
   width: 20px;
   height: 20px;
